@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const DEFAULT_BLUR_LEVEL = 25;
+const DEFAULT_BLUR_LEVEL = 10;
 const DEFAULT_TRANSITION_TIME = 400;
 const DEFAULT_STEP_TIME = 10;
 const DEFAULT_TRANSITION_DELAY = 300;
