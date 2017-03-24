@@ -15,7 +15,11 @@ import {render} from 'react-dom';
 import BlurImageLoader from 'react-blur-image-loader';
 import 'react-blur-image-loader/styles.css'; //please make sure import the stylesheet
 
-render(<BlurImageLoader src={"picture.jpg"} preview={"tiny-picture.jpg"} />, document.getElementById("root"));
+render(<BlurImageLoader src={"picture.jpg"} 
+                        preview={"tiny-picture.jpg"} 
+                        fullCover={true}
+                        maxBlurLevel={10}
+                        transitionTime={400}/>, document.getElementById("root"));
 ```
 3. Props
 
