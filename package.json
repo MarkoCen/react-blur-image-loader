@@ -1,12 +1,17 @@
 {
   "name": "react-blur-image-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
-  "main": "BlurImageLoader.jsx",
+  "main": "index.jsx",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
   },
+  "files": [
+    "styles.css",
+    "index.jsx",
+    ".gitignore"
+  ],
   "devDependencies": {
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
@@ -18,7 +23,6 @@
     "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev-server": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": {
