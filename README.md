@@ -2,6 +2,7 @@
 
 ![](https://cdn.rawgit.com/MarkoCen/react-blur-image-loader/3cf93750/samples/1.gif)
 
+Implement blurred preview image during load times
 
 ### Setup
 1. Install
