@@ -2,7 +2,7 @@
   "name": "react-blur-image-loader",
   "version": "0.2.1",
   "description": "",
-  "main": "build/dist.js",
+  "main": "build/reactBlurImageLoader.js",
   "dependencies": {
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
@@ -26,7 +26,6 @@
     "webpack-node-externals": "^1.5.4"
   },
   "scripts": {
-    "dev-server": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.build.js"
   },
   "repository": {

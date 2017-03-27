@@ -7,7 +7,10 @@ module.exports = {
     target: 'node',
     output: {
         path: path.resolve(__dirname, './build'),
-        filename: 'dist.js'
+        filename: 'reactBlurImageLoader.js',
+        library: 'reactBlurImageLoader',
+        libraryTarget: 'umd',
+        umdNamedDefine: true
     },
     resolve: {
         extensions: ['.js', '.jsx', '.css']
