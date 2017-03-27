@@ -1,8 +1,8 @@
 # react-blur-image-loader
 
-![](https://cdn.rawgit.com/MarkoCen/react-blur-image-loader/3cf93750/samples/1.gif)
+Progressive Image Loading for React.
 
-Implement blurred preview image during load times
+![](https://cdn.rawgit.com/MarkoCen/react-blur-image-loader/3cf93750/samples/1.gif)
 
 ### Setup
 1. Install
