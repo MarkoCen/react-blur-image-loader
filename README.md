@@ -14,7 +14,6 @@ npm install react-blur-image-loader react react-dom -S
 ```javascript
 import {render} from 'react-dom';
 import BlurImageLoader from 'react-blur-image-loader';
-import 'react-blur-image-loader/styles.css'; //please make sure import the stylesheet
 
 render(<BlurImageLoader src={"picture.jpg"} 
                         preview={"tiny-picture.jpg"} 
@@ -31,3 +30,4 @@ PropName | Type | Default Value | Description
 `fullCover` | bool | false | Specifies whether image should cover its parent area or contain inside.
 `maxBlurLevel` | number | 10 | Specifies the level of Gaussian blur, refer to [stdDeviation](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stdDeviation). 
 `transitionTime` | number | 400 | Specifies the transition time from blur to clear, default value is 400ms.
+`loader` | React.Element | <DefaultLoader /> | Specifies the preview loader
