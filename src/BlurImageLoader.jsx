@@ -25,13 +25,13 @@ class BlurImageLoader extends React.Component{
 
     loadImage(src, callback){
         if(src){
-            let image = new Image();
-            image.onload = ()=>{
+            this.image = new Image();
+            this.image.onload = ()=>{
                 if(callback){
                     callback.call(this);
                 }
             }
-            image.src = src;
+            this.image.src = src;
         }
     }
 
@@ -66,6 +66,10 @@ class BlurImageLoader extends React.Component{
         this.resetState();
         this.loadOriginalImage();
         this.loadPreviewImage();
+    }
+
+    componentWillUnmount(){
+        this.image.src = '';
     }
 
     renderLoader(){

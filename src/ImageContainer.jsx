@@ -18,10 +18,10 @@ class ImageContainer extends React.Component{
         if(this.props.transitionTime){
             let stepTime = DEFAULT_STEP_TIME;
             let remainTime = this.props.transitionTime;
-            setTimeout(()=>{
-                let timer = setInterval(()=>{
+            this.transitionTimeout = setTimeout(()=>{
+                this.timer = setInterval(()=>{
                     if(remainTime <= 0){
-                        window.clearInterval(timer);
+                        window.clearInterval(this.timer);
                     }else{
                         let percent = Math.max(0, ((remainTime - stepTime) / remainTime));
                         let currentBlurLevel = this.state.blurImageOpacity * percent;
@@ -32,8 +32,12 @@ class ImageContainer extends React.Component{
                     }
                 }, stepTime)
             }, DEFAULT_TRANSITION_DELAY)
-           
         }
+    }
+
+    componentWillUnmount(){
+        clearTimeout(this.transitionTimeout);
+        clearInterval(this.timer);
     }
 
     render(){
